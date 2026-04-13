@@ -9,12 +9,11 @@ const Header = () => {
     console.log(pathName);
 
 
-    const nav = <>
-        <li><Link href={'/'} > <House /> Home</Link></li>
-        <li><Link href={'/time_line'}> <Clock4 /> Time Line</Link></li>
-        <li><Link href={'/stats'}> <ChartLine /> Stats</Link></li>
-    </>
-
+    const nav = <div className='flex gap-2'>
+        <li><Link href={'/'} className={` ${pathName === '/' ? 'bg-green-800 text-white' : ''}`}> <House /> Home</Link></li>
+        <li><Link href={'/time_line'} className={` ${pathName === '/time_line' ? 'bg-green-800 text-white' : ''}`}> <Clock4 /> Time Line</Link></li>
+        <li><Link href={'/stats'} className={` ${pathName === '/stats' ? 'bg-green-800 text-white' : ''}`}> <ChartLine /> Stats</Link></li>
+    </div>
 
     return (
         <div className='container mx-auto'>
