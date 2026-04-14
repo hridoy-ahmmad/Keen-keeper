@@ -1,7 +1,7 @@
 import CallBtn from '@/Components/TimlineButton/CallBtn';
 import TextBtn from '@/Components/TimlineButton/TextBtn';
 import VideoBtn from '@/Components/TimlineButton/VideoBtn';
-import { Archive, BellDot, Delete, MessageSquareMore, PhoneCall, Trash2, Video } from 'lucide-react';
+import { Archive, BellDot, Trash2 } from 'lucide-react';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import React from 'react';
@@ -24,7 +24,7 @@ const page = async ({ params }) => {
 
     const { name, picture, email, days_since_contact, status, tags, bio, goal, next_due_date } = matchedFriend
     return (
-        <div className='bg-[#F8FAFC] my-8 py-10'>
+        <div className='bg-[#F8FAFC]  my-8 py-10'>
             <div className='max-w-5xl grid mx-auto md:grid-cols-12 gap-4 p-4'>
                 <div className='md:col-span-4 '>
                     <div className=" flex flex-col gap-1">

@@ -4,6 +4,7 @@ import Header from "@/Components/Header/Header";
 import ContextProvider from "@/Context/ContextProvider";
 import Providers from "./lib/providers/Providers";
 import { ToastContainer } from "react-toastify";
+import Footer from "@/Components/Footer/Footer";
 
 
 const geistSans = Geist({
@@ -28,9 +29,12 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Header />
         <Providers>
-          {children}
+        <Header />
+          <main className="flex-1">
+            {children}
+          </main>
+          <Footer/>
           <ToastContainer />
         </Providers>
 
