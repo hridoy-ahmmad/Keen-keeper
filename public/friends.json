@@ -2,11 +2,14 @@
   {
     "id": 1,
     "name": "Arif Rahman",
-    "picture": "https://example.com/photo1.jpg",
+    "picture": "/images/71da163a5dd4fc7d29c43158f6c623d1.jpg",
     "email": "john@example.com",
     "days_since_contact": 12,
-    "status": "overdue",
-    "tags": ["college", "close friend"],
+    "status": "on-track",
+    "tags": [
+      "college",
+      "close friend"
+    ],
     "bio": "Met in university. Love hiking together.",
     "goal": 14,
     "next_due_date": "2025-07-20"
@@ -14,11 +17,14 @@
   {
     "id": 2,
     "name": "Sarah Ahmed",
-    "picture": "https://example.com/photo2.jpg",
+    "picture": "/images/w1.jpg",
     "email": "sarah@example.com",
     "days_since_contact": 5,
-    "status": "upcoming",
-    "tags": ["office", "teammate"],
+    "status": "on-track",
+    "tags": [
+      "office",
+      "teammate"
+    ],
     "bio": "Works in the same team. Very supportive.",
     "goal": 10,
     "next_due_date": "2025-04-18"
@@ -26,11 +32,14 @@
   {
     "id": 3,
     "name": "Michael Lee",
-    "picture": "https://example.com/photo3.jpg",
+    "picture": "/images/handsome-young-man-portrait-intense-look-eye-catching-beauty-fashionable-hair-beard-wearing-white-shirt-103253910.webp",
     "email": "michael@example.com",
     "days_since_contact": 20,
     "status": "overdue",
-    "tags": ["gym", "friend"],
+    "tags": [
+      "gym",
+      "friend"
+    ],
     "bio": "Gym partner and fitness enthusiast.",
     "goal": 7,
     "next_due_date": "2025-04-10"
@@ -38,11 +47,13 @@
   {
     "id": 4,
     "name": "Ayesha Khan",
-    "picture": "https://example.com/photo4.jpg",
+    "picture": "/images/w3.jpg",
     "email": "ayesha@example.com",
     "days_since_contact": 2,
-    "status": "active",
-    "tags": ["family"],
+    "status": "on-track",
+    "tags": [
+      "family"
+    ],
     "bio": "Cousin, we talk frequently.",
     "goal": 5,
     "next_due_date": "2025-04-16"
@@ -50,11 +61,13 @@
   {
     "id": 5,
     "name": "David Smith",
-    "picture": "https://example.com/photo5.jpg",
+    "picture": "/images/images (1).jpeg",
     "email": "david@example.com",
     "days_since_contact": 15,
     "status": "overdue",
-    "tags": ["client"],
+    "tags": [
+      "client"
+    ],
     "bio": "Important client from last project.",
     "goal": 10,
     "next_due_date": "2025-04-12"
@@ -62,11 +75,14 @@
   {
     "id": 6,
     "name": "Nusrat Jahan",
-    "picture": "https://example.com/photo6.jpg",
+    "picture":"/images/w3.jpg",
     "email": "nusrat@example.com",
     "days_since_contact": 8,
-    "status": "upcoming",
-    "tags": ["school", "friend"],
+    "status": "almost due",
+    "tags": [
+      "school",
+      "friend"
+    ],
     "bio": "School friend, reconnecting recently.",
     "goal": 14,
     "next_due_date": "2025-04-20"
@@ -74,11 +90,13 @@
   {
     "id": 7,
     "name": "Rahim Uddin",
-    "picture": "https://example.com/photo7.jpg",
+    "picture": "/images/images (2).jpeg",
     "email": "rahim@example.com",
     "days_since_contact": 1,
-    "status": "active",
-    "tags": ["neighbor"],
+    "status": "on-track",
+    "tags": [
+      "neighbor"
+    ],
     "bio": "Lives next door, we meet often.",
     "goal": 3,
     "next_due_date": "2025-04-15"
@@ -86,11 +104,14 @@
   {
     "id": 8,
     "name": "Emily Johnson",
-    "picture": "https://example.com/photo8.jpg",
+    "picture": "/images/images.jpeg",
     "email": "emily@example.com",
     "days_since_contact": 18,
     "status": "overdue",
-    "tags": ["online", "friend"],
+    "tags": [
+      "online",
+      "friend"
+    ],
     "bio": "Met through an online community.",
     "goal": 10,
     "next_due_date": "2025-04-08"
@@ -98,11 +119,14 @@
   {
     "id": 9,
     "name": "Tanvir Hasan",
-    "picture": "https://example.com/photo9.jpg",
+    "picture": "/images/images.jpeg",
     "email": "tanvir@example.com",
     "days_since_contact": 6,
-    "status": "upcoming",
-    "tags": ["university", "group mate"],
+    "status": "almost due",
+    "tags": [
+      "university",
+      "group mate"
+    ],
     "bio": "Worked on group projects together.",
     "goal": 12,
     "next_due_date": "2025-04-19"
@@ -110,11 +134,13 @@
   {
     "id": 10,
     "name": "Olivia Brown",
-    "picture": "https://example.com/photo10.jpg",
+    "picture": "/images/w1.jpg",
     "email": "olivia@example.com",
     "days_since_contact": 3,
-    "status": "active",
-    "tags": ["mentor"],
+    "status": "on-track",
+    "tags": [
+      "mentor"
+    ],
     "bio": "Guides me in career decisions.",
     "goal": 7,
     "next_due_date": "2025-04-17"

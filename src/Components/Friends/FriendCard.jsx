@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import React from 'react';
 
@@ -11,15 +12,16 @@ const FriendCard = ({ friend }) => {
     return (
         <div className=" p-4">
             {/* Main Card Container */}
-            <div className="bg-white w-full rounded-2xl shadow-sm border border-gray-100   p-8 flex flex-col items-center">
+            <div className="bg-white w-full rounded-2xl shadow-sm border border-gray-100 p-4 flex flex-col items-center">
 
                 {/* Profile Image Wrapper */}
-                <div className="relative w-32 h-32 mb-6">
-                    {/* <Image
-                        src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=200&h=200"
-                        alt="Emma Wilson"
-                        className="rounded-full object-cover w-full h-full border-4 border-white shadow-sm"
-                    /> */}
+                <div className="h-32 w-32 rounded-full  mb-6 relative">
+                    <Image
+                        fill
+                        src={picture}
+                        alt={name}
+                        className='object-cover rounded-full'
+                    ></Image>
                 </div>
 
                 {/* Name */}
@@ -38,7 +40,7 @@ const FriendCard = ({ friend }) => {
                     <div className='flex gap-1 '>
                         {
                             tags.map((tag, ind) =>
-                                <div key={tag.ind}><p className="bg-[#D1FAE5] text-[#065F46] px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase">
+                                <div key={ind}><p className="bg-[#D1FAE5] text-[#065F46] px-2 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase">
                                     {tag}
                                 </p> </div>)
                         }
@@ -46,8 +48,10 @@ const FriendCard = ({ friend }) => {
 
 
                     {/* Overdue Tag */}
-                    <span className="bg-[#EF4444] text-white px-4 py-1.5 rounded-full text-xs font-bold tracking-wider">
-                        Overdue
+                    <span className={` text-white px-4 py-1.5 rounded-full text-xs font-bold tracking-wider ${status === 'almost due' ? 'bg-[#EFAD44]' : status === 'overdue' ? 'bg-red-600' : status === 'on-track' ? 'bg-green-800' : ''}`}>
+                        {
+                            status
+                        }
                     </span>
                 </div>
 

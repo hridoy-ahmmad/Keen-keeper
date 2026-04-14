@@ -1,19 +1,22 @@
 "use client"
 import useFriends from '@/Hooks/useFriends';
 import FriendCard from './FriendCard';
+import Loading from '../Loading/Loading';
+
+
 
 const Friends = () => {
-    const friendsData = useFriends()
-    const frnds = friendsData.friends
-    console.log(frnds);
+    const { friends, loading } = useFriends()
+
+    if (loading) return <Loading />
 
 
     return (
-        <div>
-            <h1>your Friends</h1>
+        <div className='mt-10'>
+            <h1 className='text-3xl font-bold'>your Friends</h1>
             <div className='grid md:grid-cols-3 lg:grid-cols-4'>
                 {
-                    frnds.map(friend => <FriendCard key={friend.id} friend={friend} />)
+                    friends.map(friend => <FriendCard key={friend.id} friend={friend} />)
                 }
             </div>
         </div>
