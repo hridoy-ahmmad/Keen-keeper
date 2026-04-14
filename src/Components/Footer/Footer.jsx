@@ -22,12 +22,12 @@ const Footer = () => {
                     <div className="flex gap-4">
                         {/* Social Icons */}
                         <a href="#" className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#214D39] hover:bg-gray-200 transition-colors">
-                            <Image src={'/Icons/instagram.png'} alt="fb" height={32} width={32}></Image>
+                            <Image src={'/Icons/instagram.png'} alt="fb" height={56} width={56}></Image>
                         </a>
                         <a href="#" className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#214D39] hover:bg-gray-200 transition-colors">
-                            <Image src={'/Icons/facebook.png'} alt="fb" height={32} width={32}></Image>            </a>
+                            <Image src={'/Icons/facebook.png'} alt="fb" height={56} width={56}></Image>            </a>
                         <a href="#" className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#214D39] hover:bg-gray-200 transition-colors">
-                            <Image src={'/Icons/twitter.png'} alt="fb" height={32} width={32}></Image>            </a>
+                            <Image src={'/Icons/twitter.png'} alt="fb" height={56} width={56}></Image>            </a>
                     </div>
                 </div>
 
