@@ -13,7 +13,7 @@ const ContactHis = ({ item }) => {
                 {item.type === 'Text' && <Image src={'/Icons/text.png'} alt='Call' height={32} width={30}></Image>}
                 {item.type === 'Video' && <Image src={'/Icons/video.png'} alt='Call' height={32} width={30}></Image>}
                 <div>
-                    <p> <span className='font-bold text-xl text-gray-600'>Call </span>with  {item.name}</p>
+                    <p> <span className='font-bold text-xl text-gray-600'>{item.type} </span>with  {item.name}</p>
                     <p className='font-bold text-gray-500'> {item.time} </p>
                 </div>
             </div>

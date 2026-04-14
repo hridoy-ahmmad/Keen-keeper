@@ -6,14 +6,26 @@ const ContextProvider = ({ children }) => {
     const [friendData, setFriendData] = useState([])
 
 
-    const handle =({data, type})=>{
-
+    const date = new Date();
+    const formattedDate = date.toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric'
+    });
+    const handle = ({data, type}) => {
+        const newData = {
+            ...data,
+            type,
+            time: formattedDate
+        }
+        setFriendData([...friendData, newData])
     }
-console.log(friendData);
+    console.log(friendData);
 
     const data = {
         friendData,
-        setFriendData
+        setFriendData,
+        handle
     }
 
     return <friendContext.Provider value={data}>
