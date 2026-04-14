@@ -1,5 +1,6 @@
 
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const FriendCard = ({ friend }) => {
@@ -10,9 +11,14 @@ const FriendCard = ({ friend }) => {
 
 
     return (
-        <div className=" p-4">
+        <Link
+         href={`/friendDetails/${id}`}
+
+        className=" p-4">
             {/* Main Card Container */}
-            <div className="bg-white w-full rounded-2xl shadow-sm border border-gray-100 p-4 flex flex-col items-center">
+            <div 
+
+            className="bg-white w-full rounded-2xl shadow-sm border border-gray-100 p-4 flex flex-col items-center hover:shadow-xl transition duration-150 cursor-pointer">
 
                 {/* Profile Image Wrapper */}
                 <div className="h-32 w-32 rounded-full  mb-6 relative">
@@ -56,7 +62,7 @@ const FriendCard = ({ friend }) => {
                 </div>
 
             </div>
-        </div>
+        </Link>
     );
 };
 
