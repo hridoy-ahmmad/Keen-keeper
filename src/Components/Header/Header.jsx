@@ -6,15 +6,12 @@ import React from 'react';
 
 const Header = () => {
     const pathName = usePathname()
-    console.log(pathName);
-
-
+    // console.log(pathName);
     const nav = <div className='md:flex space-y-1 gap-2 font-bold'>
         <li><Link href={'/'} className={` ${pathName === '/' ? 'bg-green-800 text-white' : ''}`}> <House /> Home</Link></li>
         <li><Link href={'/time_line'} className={` ${pathName === '/time_line' ? 'bg-green-800 text-white' : ''}`}> <Clock4 /> Time Line</Link></li>
         <li><Link href={'/stats'} className={` ${pathName === '/stats' ? 'bg-green-800 text-white' : ''}`}> <ChartLine /> Stats</Link></li>
     </div>
-
     return (
         <div className='container mx-auto'>
             <div className="navbar ">
