@@ -1,3 +1,6 @@
+import CallBtn from '@/Components/TimlineButton/CallBtn';
+import TextBtn from '@/Components/TimlineButton/TextBtn';
+import VideoBtn from '@/Components/TimlineButton/VideoBtn';
 import { Archive, BellDot, Delete, MessageSquareMore, PhoneCall, Trash2, Video } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
@@ -54,7 +57,7 @@ const page = async ({ params }) => {
                                 </div>
                                 <div>
                                     <p className='italic text-gray-500 text-center'>{`"${bio}"`}</p>
-                                <p className='italic text-gray-500 text-center'> Email: {email} </p>
+                                    <p className='italic text-gray-500 text-center'> Email: {email} </p>
                                 </div>
                             </div>
                         </div>
@@ -94,18 +97,9 @@ const page = async ({ params }) => {
                     <div className='grid grid-cols-1 bg-white p-4 border border-gray-200 rounded-md shadow-md min-h-fit space-y-5'>
                         <h1 className='text-lg font-bold text-green-900'>Quick Check-In</h1>
                         <div className='grid md:grid-cols-3  p-4 border border-gray-200 rounded-md shadow-md gap-2'>
-                            <div className='text-center border border-gray-200  bg-white rounded-md py-2 flex justify-center items-center flex-col gap-2 cursor-pointer'>
-                                <PhoneCall />
-                                <p className='text-gray-500 text-xl'>Call</p>
-                            </div>
-                            <div className='text-center border border-gray-200  bg-white rounded-md py-2 flex justify-center items-center flex-col gap-2 cursor-pointer'>
-                                <MessageSquareMore />
-                                <p className='text-gray-500 text-xl'>Call</p>
-                            </div>
-                            <div className='text-center border border-gray-200  bg-white rounded-md py-2 flex justify-center items-center flex-col gap-2 cursor-pointer'>
-                                <Video />
-                                <p className='text-gray-500 text-xl'>Call</p>
-                            </div>
+                            <CallBtn matchedFriend={matchedFriend} />
+                            <TextBtn matchedFriend={matchedFriend} />
+                            <VideoBtn matchedFriend={matchedFriend} />
                         </div>
                     </div>
                 </div>
