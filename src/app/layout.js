@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/Components/Header/Header";
 import ContextProvider from "@/Context/ContextProvider";
 import Providers from "./lib/providers/Providers";
+import { ToastContainer } from "react-toastify";
 
 
 const geistSans = Geist({
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
         <Header />
         <Providers>
           {children}
+          <ToastContainer />
         </Providers>
 
       </body>

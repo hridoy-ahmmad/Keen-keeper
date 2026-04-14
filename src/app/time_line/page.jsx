@@ -9,8 +9,8 @@ const TimeLine = () => {
 
 
     return (
-        <div className='container mx-auto'>
-            <h1 className='text-2xl font-bold text-green-950'> timeline </h1>
+        <div className='container mx-auto md:mt-10'>
+            <h1 className='text-4xl font-bold text-green-950 my-4'> Timeline </h1>
             <div className='space-y-2'>
                 {
                     friendData.length === 0 ? <NoTimeline /> : friendData.map((item, ind) => <ContactHis key={ind} item={item}></ContactHis>)

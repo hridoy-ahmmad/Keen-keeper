@@ -3,10 +3,12 @@ import TextBtn from '@/Components/TimlineButton/TextBtn';
 import VideoBtn from '@/Components/TimlineButton/VideoBtn';
 import { Archive, BellDot, Delete, MessageSquareMore, PhoneCall, Trash2, Video } from 'lucide-react';
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
 import React from 'react';
 
 const page = async ({ params }) => {
     const { id } = await params
+
 
     const dataPromise = async () => {
         const res = await fetch('http://localhost:3000/friends.json')
@@ -15,6 +17,11 @@ const page = async ({ params }) => {
     }
     const friends = await dataPromise()
     const matchedFriend = friends.find(frnd => frnd.id === Number(id))
+
+    if (!matchedFriend) {
+        notFound()
+    }
+
     const { name, picture, email, days_since_contact, status, tags, bio, goal, next_due_date } = matchedFriend
     return (
         <div className='bg-[#F8FAFC] my-8 py-10'>
