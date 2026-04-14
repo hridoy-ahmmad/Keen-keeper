@@ -12,7 +12,7 @@ const Friends = () => {
 
 
     return (
-        <div className='mt-10'>
+        <div className='mt-10 container mx-auto'>
             <h1 className='text-3xl font-bold'>your Friends</h1>
             <div className='grid md:grid-cols-3 lg:grid-cols-4'>
                 {

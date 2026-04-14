@@ -13,8 +13,8 @@ const Header = () => {
         <li><Link href={'/stats'} className={` ${pathName === '/stats' ? 'bg-green-800 text-white' : ''}`}> <ChartLine /> Stats</Link></li>
     </div>
     return (
-        <div className='container mx-auto'>
-            <div className="navbar ">
+        <div className=''>
+            <div className="navbar max-w-11/12 mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
