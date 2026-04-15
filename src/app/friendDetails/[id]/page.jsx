@@ -6,12 +6,19 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import React from 'react';
 
+export const metadata = {
+  title: "Details",
+};
+
+
 const page = async ({ params }) => {
     const { id } = await params
 
 
     const dataPromise = async () => {
-        const res = await fetch('http://localhost:3000/friends.json')
+        const res = await fetch('https://keen-keeper-mu.vercel.app/friends.json', {
+            cache: 'no-store'
+        })
         const data = await res.json()
         return data
     }

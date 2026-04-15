@@ -3,6 +3,8 @@ import { friendContext } from '@/Context/ContextProvider';
 import React, { useContext } from 'react';
 import { Legend, Pie, PieChart, Tooltip } from 'recharts';
 
+
+
 const Stats = () => {
 
     const { friendData } = useContext(friendContext)
@@ -41,10 +43,8 @@ const Stats = () => {
                                 innerRadius="80%"
                                 outerRadius="100%"
                                 // Corner radius is the rounded edge of each pie slice
-
                                 fill="#8884d8"
                                 // padding angle is the gap between each pie slice
-
                                 dataKey="value"
                                 name='name'
                             />
