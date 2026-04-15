@@ -17,7 +17,6 @@ export default function Home() {
       </div>
       <Stats />
       <Friends></Friends>
-
     </section>
   );
 }

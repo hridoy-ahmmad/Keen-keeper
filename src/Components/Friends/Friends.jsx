@@ -20,7 +20,7 @@ const Friends = () => {
     return (
         <div className='mt-10 container mx-auto'>
             <div className='md:flex justify-between'>
-                <h1 className='text-3xl font-bold my-5 text-green-950'>your Friends</h1>
+                <h1 className='text-3xl font-bold my-5 text-green-950'>YOUR FRIENDS</h1>
                 <div>
                     <p className='text-lg font-semibold text-gray-500'>Search </p>
                     <label className="input">
